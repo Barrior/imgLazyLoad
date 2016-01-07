@@ -1,0 +1,2 @@
+# imgLazyLoad
+基于jQuery的一个简洁高效的图片延时加载插件
