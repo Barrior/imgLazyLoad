@@ -1,5 +1,5 @@
 /**
- * imgLazyLoad v1.0.0 - jQuery plugin for lazy loading images
+ * imgLazyLoad v1.0.1 - jQuery plugin for lazy loading images
  * https://github.com/Barrior/imgLazyLoad
  * Copyright 2016 Barrior <Barrior@qq.com>
  * Licensed under the MIT license:
