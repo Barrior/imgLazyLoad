@@ -9,6 +9,30 @@
 
 	'use strict';
 
+	var throttle = function( fn, delay ){
+
+		if( !delay ){
+
+			return fn;
+
+		}
+
+		var timer;
+
+		return function(){
+
+			clearTimeout( timer );
+
+			timer = setTimeout(function(){
+
+				fn();
+
+			}, delay );
+
+		}
+
+	};
+
 	$.fn.imgLazyLoad = function( options ){
 
 		var elements = this,
@@ -72,30 +96,6 @@
 					}
 
 				});
-			},
-
-			throttle = function( fn, delay ){
-
-				if( !delay ){
-
-					return fn;
-
-				}
-
-				var timer;
-
-				return function(){
-
-					clearTimeout( timer );
-
-					timer = setTimeout(function(){
-
-						fn();
-
-					}, delay );
-
-				}
-
 			};
 
 		if( !container.length ){
